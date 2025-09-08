@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.9.8)  8 SEP 2025 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.9.8)  8 SEP 2025 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -339,32 +339,183 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+\MT@toks=\toks28
+\MT@tempbox=\box57
+\MT@count=\count295
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks29
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen168
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count296
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip54
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count297
+\@cmidlb=\count298
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count299
+\@lastruleclass=\count300
+\@thisrulewidth=\dimen181
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen182
+\captionmargin=\dimen183
+\caption@leftmargin=\dimen184
+\caption@rightmargin=\dimen185
+\caption@width=\dimen186
+\caption@indent=\dimen187
+\caption@parindent=\dimen188
+\caption@hangindent=\dimen189
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count303
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count304
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen190
+\ar@mcellbox=\box58
+\extrarowheight=\dimen191
+\NC@list=\toks30
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box59
+)
+\TX@col@width=\dimen192
+\TX@old@table=\dimen193
+\TX@old@col=\dimen194
+\TX@target=\dimen195
+\TX@delta=\dimen196
+\TX@cols=\count305
+\TX@ftn=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen197
+\enit@toks=\toks32
+\enit@inbox=\box60
+\enit@count@id=\count306
+\enitdp@description=\count307
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count294
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box61
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -379,27 +530,27 @@ e
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -409,126 +560,214 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring ON on input line 37.
 (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-\c@lstlisting=\count295
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+\c@lstlisting=\count309
+LaTeX Info: Redefining \microtypecontext on input line 37.
+Package microtype Info: Applying patch `item' on input line 37.
+Package microtype Info: Applying patch `toc' on input line 37.
+Package microtype Info: Applying patch `eqnum' on input line 37.
+Package microtype Info: Applying patch `footnote' on input line 37.
+Package microtype Info: Applying patch `verbatim' on input line 37.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 37.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
 
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<../Q1/assets/background.jpg, id=108, 777.90625pt x 891.33pt>
+File: ../Q1/assets/background.jpg Graphic file (type jpg)
+<use ../Q1/assets/background.jpg>
+Package pdftex.def Info: ../Q1/assets/background.jpg  used on input line 46.
+(pdftex.def)             Requested size: 226.48395pt x 259.49913pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/lm/lm-rm.enc} <../Q1/assets/background.jpg>] (./report.toc
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
-
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-! Font TS1/cmr/m/n/12=tcrm1200 at 12.0pt not loadable: Metric (TFM) file not fo
-und.
-<to be read again> 
-                   relax 
-l.27   \item S
-              tationary (part1): \texttt{uv run python part1/stationary.py}
-? 
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-[1
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+))
+\tf@toc=\write4
+\openout4 = `report.toc'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no ± in font nullfont!
-[2]
-<../Q1/part1/q1_part1_results.png, id=32, 860.2539pt x 569.7285pt>
+ [2
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+72.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [3
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texli
+ve/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/font
+s/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/
+lm-mathsy.enc}]
+[4]
+<../Q1/part1/q1_part1_results.png, id=171, 860.2539pt x 569.7285pt>
 File: ../Q1/part1/q1_part1_results.png Graphic file (type png)
 <use ../Q1/part1/q1_part1_results.png>
 Package pdftex.def Info: ../Q1/part1/q1_part1_results.png  used on input line 1
-05.
-(pdftex.def)             Requested size: 375.80544pt x 248.88179pt.
+54.
+(pdftex.def)             Requested size: 362.37569pt x 239.9885pt.
+ [5
 
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-[3 <../Q1/part1/q1_part1_results.png>]
-<../Q1/part2/q1_part2_results.png, id=45, 715.7139pt x 425.4294pt>
+ <../Q1/part1/q1_part1_results.png>]
+<../Q1/part2/q1_part2_results.png, id=183, 715.7139pt x 425.4294pt>
 File: ../Q1/part2/q1_part2_results.png Graphic file (type png)
 <use ../Q1/part2/q1_part2_results.png>
 Package pdftex.def Info: ../Q1/part2/q1_part2_results.png  used on input line 1
-47.
-(pdftex.def)             Requested size: 375.80544pt x 223.38623pt.
+97.
+(pdftex.def)             Requested size: 362.37569pt x 215.40166pt.
+ [6
 
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-[4 <../Q1/part2/q1_part2_results.png>]
-<../Q1/part3/q1_part3_results.png, id=60, 860.2539pt x 569.7285pt>
+ <../Q1/part2/q1_part2_results.png>]
+<../Q1/part3/q1_part3_results.png, id=194, 860.2539pt x 569.7285pt>
 File: ../Q1/part3/q1_part3_results.png Graphic file (type png)
 <use ../Q1/part3/q1_part3_results.png>
-Package pdftex.def Info: ../Q1/part3/q1_part3_results.png  used on input line 1
-90.
-(pdftex.def)             Requested size: 375.80544pt x 248.88179pt.
- [5 <../Q1/part3/q1_part3_results.png>]
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
+Package pdftex.def Info: ../Q1/part3/q1_part3_results.png  used on input line 2
+41.
+(pdftex.def)             Requested size: 362.37569pt x 239.9885pt.
+ [7
 
-Overfull \hbox (188.97481pt too wide) in paragraph at lines 210--211
-\OT1/cmr/m/n/12 Both Value It-er-a-tion and Pol-icy It-er-a-tion were im-ple-me
-nted with state space $(\OML/cmm/m/it/12 current[]weight; item[]idx; item[]weig
-ht; item[]value\OT1/cmr/m/n/12 )$. 
+ <../Q1/part3/q1_part3_results.png>]
+Overfull \hbox (99.98538pt too wide) in paragraph at lines 262--263
+\OT1/lmr/m/n/10 (-20) Both Value It-er-a-tion and Pol-icy It-er-a-tion were im-
+ple-mented with state space $(\OML/lmm/m/it/10 current[]weight; item[]idx; item
+[]weight; item[]value\OT1/lmr/m/n/10 (-20) )$. 
  []
 
-[6]
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-Missing character: There is no ˆ in font nullfont!
-[7] [8] (./report.aux)
+[8
+
+]
+<../Q2/part1/value_iteration_-_value_function_heatmap.png, id=214, 704.3916pt x
+ 505.89pt>
+File: ../Q2/part1/value_iteration_-_value_function_heatmap.png Graphic file (ty
+pe png)
+<use ../Q2/part1/value_iteration_-_value_function_heatmap.png>
+Package pdftex.def Info: ../Q2/part1/value_iteration_-_value_function_heatmap.p
+ng  used on input line 335.
+(pdftex.def)             Requested size: 217.42265pt x 156.1527pt.
+<../Q2/part1/value_iteration_-_step_limit_10.png, id=215, 704.3916pt x 505.89pt
+>
+File: ../Q2/part1/value_iteration_-_step_limit_10.png Graphic file (type png)
+<use ../Q2/part1/value_iteration_-_step_limit_10.png>
+Package pdftex.def Info: ../Q2/part1/value_iteration_-_step_limit_10.png  used 
+on input line 339.
+(pdftex.def)             Requested size: 217.42265pt x 156.1527pt.
+<../Q2/part1/value_iteration_-_step_limit_50.png, id=216, 698.1282pt x 505.89pt
+>
+File: ../Q2/part1/value_iteration_-_step_limit_50.png Graphic file (type png)
+<use ../Q2/part1/value_iteration_-_step_limit_50.png>
+Package pdftex.def Info: ../Q2/part1/value_iteration_-_step_limit_50.png  used 
+on input line 347.
+(pdftex.def)             Requested size: 217.42265pt x 157.54988pt.
+<../Q2/part1/value_iteration_-_step_limit_500.png, id=217, 704.3916pt x 505.89p
+t>
+File: ../Q2/part1/value_iteration_-_step_limit_500.png Graphic file (type png)
+<use ../Q2/part1/value_iteration_-_step_limit_500.png>
+Package pdftex.def Info: ../Q2/part1/value_iteration_-_step_limit_500.png  used
+ on input line 351.
+(pdftex.def)             Requested size: 217.42265pt x 156.1527pt.
+ [9 <../Q2/part1/value_iteration_-_value_function_heatmap.png> <../Q2/part1/val
+ue_iteration_-_step_limit_10.png> <../Q2/part1/value_iteration_-_step_limit_50.
+png> <../Q2/part1/value_iteration_-_step_limit_500.png>] [10] (./report.aux)
 
 Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  E3ECC9E32802F921C13F8C84507DFBC1;4130.
+(rerunfilecheck)             Before: E3ECC9E32802F921C13F8C84507DFBC1;4130
+(rerunfilecheck)             After:  E9DC7DBD953E3AF9AAC0D976DE004323;4036.
  ) 
 Here is how much of TeX's memory you used:
- 11146 strings out of 478087
- 172791 string characters out of 5842651
- 1864388 words of memory out of 6000000
- 31038 multiletter control sequences out of 15000+600000
- 521219 words of font info for 67 fonts, out of 8000000 for 9000
+ 15633 strings out of 478087
+ 253652 string characters out of 5842651
+ 1863388 words of memory out of 6000000
+ 35349 multiletter control sequences out of 15000+600000
+ 552246 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,9n,76p,390b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (8 pages, 667340 bytes).
+ 75i,9n,76p,1003b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/lm/lmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on report.pdf (10 pages, 1565504 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 25337 words of extra memory for PDF output out of 29859 (max. 10000000)
 
