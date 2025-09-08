@@ -1,0 +1,9 @@
+Q1 Part 3 Results
+================
+
+Prioritized VI: 3917 iterations, 30219 calls, 47.00±21.79
+Standard VI: 30 iterations, 86800 calls, 47.00±21.79
+Policy Iteration: 24 iterations, 328400 calls, 47.00±21.79
+Prioritized VI vs Standard VI identical: False
+Prioritized VI vs Policy Iteration identical: False
+Standard VI vs Policy Iteration identical: False

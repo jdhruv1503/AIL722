@@ -1,0 +1,16 @@
+Q2 Part 1 Results
+================
+
+Value Iteration Results:
+Seed 0: 399.00±0.00
+Seed 1: 428.00±0.00
+Seed 2: 268.00±0.00
+Seed 3: 245.00±0.00
+Seed 4: 502.00±0.00
+
+Policy Iteration Results:
+Seed 0: 134.00±0.00
+Seed 1: 367.00±0.00
+Seed 2: 243.00±0.00
+Seed 3: 269.00±0.00
+Seed 4: 400.00±0.00

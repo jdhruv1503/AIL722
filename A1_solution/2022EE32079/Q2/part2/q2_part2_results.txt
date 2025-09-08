@@ -1,0 +1,12 @@
+Q2 Part 2 Results
+================
+
+Portfolio Optimization Results:
+Gamma 0.999:
+- Value Iteration: Various iterations, execution times
+- Policy Iteration: Various iterations, execution times
+Gamma 1.0:
+- Value Iteration: Various iterations, execution times
+- Policy Iteration: Various iterations, execution times
+Variance 1.0:
+- Policy Iteration convergence analysis

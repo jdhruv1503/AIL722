@@ -1,0 +1,18 @@
+Q1 Part 1 Results
+================
+
+Gamma = 0.95
+Policy Iteration: 26 iterations, 334800 calls, 47.00±21.79
+Value Iteration: 30 iterations, 86800 calls, 47.00±21.79
+Policies identical: False
+
+Gamma = 0.5
+Policy Iteration: 25 iterations, 108400 calls, 32.00±57.24
+Value Iteration: 26 iterations, 75600 calls, 32.00±57.24
+Policies identical: False
+
+Gamma = 0.3
+Policy Iteration: 25 iterations, 100000 calls, 32.00±57.24
+Value Iteration: 16 iterations, 47600 calls, 32.00±57.24
+Policies identical: False
+
