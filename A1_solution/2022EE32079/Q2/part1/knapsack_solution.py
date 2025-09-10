@@ -14,10 +14,8 @@ class ValueIterationOnlineKnapsack:
         
         self.max_weight = env.max_weight
         self.num_items = env.N
-        self.max_item_weight = 100
-        self.max_item_value = 100
         
-        self.V = np.zeros((self.max_weight + 1, self.num_items, self.max_item_weight + 1, self.max_item_value + 1))
+        self.V = np.zeros((self.max_weight + 1, self.num_items))
         
     def get_reward_and_done(self, current_weight, item_idx, action):
         if action == 0:
@@ -36,27 +34,21 @@ class ValueIterationOnlineKnapsack:
             
             for w in range(self.max_weight + 1):
                 for item_idx in range(self.num_items):
-                    item_weight = self.env.item_weights[item_idx]
-                    item_value = self.env.item_values[item_idx]
-                    
-                    if item_weight > self.max_weight - w:
-                        continue
-                    
                     reject_reward, reject_done = self.get_reward_and_done(w, item_idx, 0)
                     if not reject_done:
-                        reject_value = reject_reward + self.gamma * V_old[w, (item_idx + 1) % self.num_items, item_weight, item_value]
+                        reject_value = reject_reward + self.gamma * V_old[w, (item_idx + 1) % self.num_items]
                     else:
                         reject_value = reject_reward
                     
                     accept_reward, accept_done = self.get_reward_and_done(w, item_idx, 1)
                     if not accept_done:
-                        new_weight = w + item_weight
-                        accept_value = accept_reward + self.gamma * V_old[new_weight, (item_idx + 1) % self.num_items, item_weight, item_value]
+                        new_weight = w + self.env.item_weights[item_idx]
+                        accept_value = accept_reward + self.gamma * V_old[new_weight, (item_idx + 1) % self.num_items]
                     else:
                         accept_value = accept_reward
                     
-                    self.V[w, item_idx, item_weight, item_value] = max(reject_value, accept_value)
-                    delta = max(delta, abs(self.V[w, item_idx, item_weight, item_value] - V_old[w, item_idx, item_weight, item_value]))
+                    self.V[w, item_idx] = max(reject_value, accept_value)
+                    delta = max(delta, abs(self.V[w, item_idx] - V_old[w, item_idx]))
             
             if delta < self.epsilon:
                 break
@@ -71,14 +63,14 @@ class ValueIterationOnlineKnapsack:
         
         reject_reward, reject_done = self.get_reward_and_done(current_weight, item_idx, 0)
         if not reject_done:
-            reject_value = reject_reward + self.gamma * self.V[current_weight, (item_idx + 1) % self.num_items, item_weight, item_value]
+            reject_value = reject_reward + self.gamma * self.V[current_weight, (item_idx + 1) % self.num_items]
         else:
             reject_value = reject_reward
         
         accept_reward, accept_done = self.get_reward_and_done(current_weight, item_idx, 1)
         if not accept_done:
             new_weight = current_weight + item_weight
-            accept_value = accept_reward + self.gamma * self.V[new_weight, (item_idx + 1) % self.num_items, item_weight, item_value]
+            accept_value = accept_reward + self.gamma * self.V[new_weight, (item_idx + 1) % self.num_items]
         else:
             accept_value = accept_reward
         
@@ -93,11 +85,9 @@ class PolicyIterationOnlineKnapsack:
         
         self.max_weight = env.max_weight
         self.num_items = env.N
-        self.max_item_weight = 100
-        self.max_item_value = 100
         
-        self.policy = np.zeros((self.max_weight + 1, self.num_items, self.max_item_weight + 1, self.max_item_value + 1), dtype=int)
-        self.V = np.zeros((self.max_weight + 1, self.num_items, self.max_item_weight + 1, self.max_item_value + 1))
+        self.policy = np.zeros((self.max_weight + 1, self.num_items), dtype=int)
+        self.V = np.zeros((self.max_weight + 1, self.num_items))
         
     def get_reward_and_done(self, current_weight, item_idx, action):
         if action == 0:
@@ -116,27 +106,21 @@ class PolicyIterationOnlineKnapsack:
             
             for w in range(self.max_weight + 1):
                 for item_idx in range(self.num_items):
-                    item_weight = self.env.item_weights[item_idx]
-                    item_value = self.env.item_values[item_idx]
-                    
-                    if item_weight > self.max_weight - w:
-                        continue
-                    
-                    action = self.policy[w, item_idx, item_weight, item_value]
+                    action = self.policy[w, item_idx]
                     reward, done = self.get_reward_and_done(w, item_idx, action)
                     
                     if not done:
                         if action == 0:
-                            next_value = self.V[w, (item_idx + 1) % self.num_items, item_weight, item_value]
+                            next_value = self.V[w, (item_idx + 1) % self.num_items]
                         else:
-                            new_weight = w + item_weight
-                            next_value = self.V[new_weight, (item_idx + 1) % self.num_items, item_weight, item_value]
+                            new_weight = w + self.env.item_weights[item_idx]
+                            next_value = self.V[new_weight, (item_idx + 1) % self.num_items]
                         
-                        self.V[w, item_idx, item_weight, item_value] = reward + self.gamma * next_value
+                        self.V[w, item_idx] = reward + self.gamma * next_value
                     else:
-                        self.V[w, item_idx, item_weight, item_value] = reward
+                        self.V[w, item_idx] = reward
                     
-                    delta = max(delta, abs(self.V[w, item_idx, item_weight, item_value] - V_old[w, item_idx, item_weight, item_value]))
+                    delta = max(delta, abs(self.V[w, item_idx] - V_old[w, item_idx]))
             
             if delta < self.epsilon:
                 break
@@ -146,30 +130,24 @@ class PolicyIterationOnlineKnapsack:
         
         for w in range(self.max_weight + 1):
             for item_idx in range(self.num_items):
-                item_weight = self.env.item_weights[item_idx]
-                item_value = self.env.item_values[item_idx]
-                
-                if item_weight > self.max_weight - w:
-                    continue
-                
-                old_action = self.policy[w, item_idx, item_weight, item_value]
+                old_action = self.policy[w, item_idx]
                 
                 reject_reward, reject_done = self.get_reward_and_done(w, item_idx, 0)
                 if not reject_done:
-                    reject_value = reject_reward + self.gamma * self.V[w, (item_idx + 1) % self.num_items, item_weight, item_value]
+                    reject_value = reject_reward + self.gamma * self.V[w, (item_idx + 1) % self.num_items]
                 else:
                     reject_value = reject_reward
                 
                 accept_reward, accept_done = self.get_reward_and_done(w, item_idx, 1)
                 if not accept_done:
-                    new_weight = w + item_weight
-                    accept_value = accept_reward + self.gamma * self.V[new_weight, (item_idx + 1) % self.num_items, item_weight, item_value]
+                    new_weight = w + self.env.item_weights[item_idx]
+                    accept_value = accept_reward + self.gamma * self.V[new_weight, (item_idx + 1) % self.num_items]
                 else:
                     accept_value = accept_reward
                 
-                self.policy[w, item_idx, item_weight, item_value] = 1 if accept_value > reject_value else 0
+                self.policy[w, item_idx] = 1 if accept_value > reject_value else 0
                 
-                if self.policy[w, item_idx, item_weight, item_value] != old_action:
+                if self.policy[w, item_idx] != old_action:
                     policy_stable = False
         
         return policy_stable
@@ -189,7 +167,7 @@ class PolicyIterationOnlineKnapsack:
             state = state['state']
         
         current_weight, item_idx, item_weight, item_value = state
-        return self.policy[current_weight, item_idx, item_weight, item_value]
+        return self.policy[current_weight, item_idx]
 
 def evaluate_policy(env, policy, num_episodes=5, seeds=None):
     if seeds is None:
@@ -226,16 +204,11 @@ def plot_knapsack_values(knapsack_values, title="Knapsack Values"):
     plt.savefig(f'{title.lower().replace(" ", "_")}.png', dpi=300, bbox_inches='tight')
 
 def plot_value_function_heatmap(V, title="Value Function Heatmap"):
-    weights = np.arange(V.shape[0])
-    values = np.arange(V.shape[3])
-    
-    V_2d = np.mean(V, axis=(1, 2))
-    
     plt.figure(figsize=(12, 8))
-    plt.imshow(V_2d, cmap='viridis', aspect='auto')
+    plt.imshow(V, cmap='viridis', aspect='auto')
     plt.colorbar(label='Value')
     plt.title(title)
-    plt.xlabel('Item Value')
+    plt.xlabel('Item Index')
     plt.ylabel('Current Weight')
     plt.savefig(f'{title.lower().replace(" ", "_")}.png', dpi=300, bbox_inches='tight')
 
@@ -253,7 +226,7 @@ def main():
         vi_solver = ValueIterationOnlineKnapsack(env)
         iterations = vi_solver.value_iteration()
         
-        mean_reward, std_reward, knapsack_values = evaluate_policy(env, vi_solver, num_episodes=1, seeds=[seed])
+        mean_reward, std_reward, knapsack_values = evaluate_policy(env, vi_solver, num_episodes=5, seeds=[seed])
         vi_results.append((mean_reward, std_reward, knapsack_values, vi_solver.V))
         
         print(f"Seed {seed}: {iterations} iterations, Mean reward: {mean_reward:.2f} ± {std_reward:.2f}")
@@ -267,7 +240,7 @@ def main():
         pi_solver = PolicyIterationOnlineKnapsack(env)
         iterations = pi_solver.run_policy_iteration()
         
-        mean_reward, std_reward, knapsack_values = evaluate_policy(env, pi_solver, num_episodes=1, seeds=[seed])
+        mean_reward, std_reward, knapsack_values = evaluate_policy(env, pi_solver, num_episodes=5, seeds=[seed])
         pi_results.append((mean_reward, std_reward, knapsack_values, pi_solver.V))
         
         print(f"Seed {seed}: {iterations} iterations, Mean reward: {mean_reward:.2f} ± {std_reward:.2f}")

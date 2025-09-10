@@ -1,5 +1,0 @@
-Q1 Part 2 Results
-================
-
-Time-dependent VI: 112000 calls, 37.70±39.62
-Stationary VI: 87 iterations, 246400 calls, 23.65±44.71
